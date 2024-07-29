@@ -474,6 +474,27 @@ a.active {
   font-weight: bold;
 }
 
+/* Skills section
+==================================================*/
+#skills {
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+
+.skills-table td {
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  font-weight: bold;
+}
+
+/* Skills section
+==================================================*/
+#projects {
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+
 /* Responsive media queries
 ==================================================*/
 
@@ -506,6 +527,10 @@ a.active {
   .categories-grid .categories ul li {
     list-style: none;
     margin: 10px 0;
+  }
+
+  .bg-nav {
+    height: 100px;
   }
 }
 
