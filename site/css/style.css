@@ -481,18 +481,123 @@ a.active {
   background: #f3f3f3;
 }
 
-.skills-table td {
-  text-align: center;
-  vertical-align: middle;
-  height: 50px;
-  font-weight: bold;
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  justify-items: start;
+  align-items: center;
 }
 
-/* Skills section
+.skills-grid-cell {
+  padding: 20px;
+}
+
+.skill {
+  position: relative;
+  height: 25px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.skill-bar {
+  position: relative;
+  height: 25px;
+  width: 100%;
+  border: #888 1px solid;
+  border-radius: 25px;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.skill-completed {
+  height: 100%;
+  width: 16%;
+  min-width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Projects section
 ==================================================*/
 #projects {
   padding: 100px 0;
   background: #f3f3f3;
+}
+
+/* Expertise section
+==================================================*/
+#expertise {
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+
+.expertise-list {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.expertise-list li {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.expertise-list li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertise-list li:nth-child(1)::before {
+  content: '1';
+}
+
+.expertise-list li:nth-child(2)::before {
+  content: '2';
+}
+
+.expertise-list li:nth-child(3)::before {
+  content: '3';
+}
+
+.expertise-list li:nth-child(4)::before {
+  content: '4';
+}
+
+.expertise-list li:nth-child(5)::before {
+  content: '5';
+}
+
+.expertise-list li:nth-child(6)::before {
+  content: '6';
+}
+
+.expertise-list li:nth-child(7)::before {
+  content: '7';
+}
+
+.expertise-list li:nth-child(8)::before {
+  content: '8';
+}
+
+.expertise-list li:nth-child(9)::before {
+  content: '9';
+}
+
+.expertise-list li:nth-child(10)::before {
+  content: '10';
 }
 
 /* Responsive media queries
@@ -530,7 +635,11 @@ a.active {
   }
 
   .bg-nav {
-    height: 100px;
+    height: 140px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
